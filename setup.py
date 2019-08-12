@@ -11,11 +11,11 @@ if sys.argv[-1] == 'publish':
 
 setup(
     author="Luca Forzutti",
-    author_email="team@ahd-creative.com",
+    author_email="luca@ahd-creative.com",
     description="semantic templates for artek apps",
     name="artek-templates",
     version=VERSION,
-    url="http://github.com/darkartek/artek-templates/",
+    url="http://github.com/AHDCreative/artek-templates/",
     license="MIT",
     packages=find_packages(),
     include_package_data=True,
