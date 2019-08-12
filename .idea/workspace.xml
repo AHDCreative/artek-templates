@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="82bc0dec-3f9f-4682-854f-6413ef2c817b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/artek-templates.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artek-templates.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -76,7 +74,7 @@
       <workItem from="1565331339778" duration="96000" />
       <workItem from="1565331466550" duration="96000" />
       <workItem from="1565331650029" duration="3410000" />
-      <workItem from="1565596370691" duration="257000" />
+      <workItem from="1565596370691" duration="331000" />
     </task>
     <servers />
   </component>
