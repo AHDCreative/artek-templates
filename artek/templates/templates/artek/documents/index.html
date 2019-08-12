@@ -1,0 +1,11 @@
+{% extends "artek/documents/base.html" %}
+
+{% block body_class %}{{ block.super }} artek-documents-index{% endblock %}
+
+{% block head_title %}Documents{% endblock %}
+
+{% block body %}
+    <h2>Documents</h2>
+    {% include "artek/documents/_usage.html" %}
+    {% include "artek/documents/_member_table.html" %}
+{% endblock %}

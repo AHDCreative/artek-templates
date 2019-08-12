@@ -1,0 +1,9 @@
+{% extends "artek/stripe/base.html" %}
+{% load bootstrap i18n %}
+{% block body_class %}{{ block.super }} artek-stripe-invoices{% endblock %}
+{% block content %}
+    <div class="artek-subscriptions-invoices-container">
+        <h4>{% trans 'Payment History' %}</h4>
+        {% include "artek/stripe/_invoice_table.html" with invoices=object_list %}
+    </div>
+{% endblock %}

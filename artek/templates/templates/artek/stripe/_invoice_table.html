@@ -1,0 +1,33 @@
+{% load i18n %}
+<table>
+    <thead>
+    <tr>
+        <th>{% trans 'Date' %}</th>
+        <th>{% trans 'Description' %}</th>
+        <th>{% trans 'Period' %}</th>
+        <th>{% trans 'Total' %}</th>
+        <th>{% trans 'Paid' %}</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for invoice in invoices %}
+        <tr>
+            <td>
+                {{ invoice.date }}
+            </td>
+            <td>
+                {{ invoice.subscription.plan.name }}
+            </td>
+            <td>
+                {{ invoice.period_start }}—{{ invoice.period_end }}
+            </td>
+            <td class="artek-stripe-invoice-total">
+                {{ invoice.total }}
+            </td>
+            <td class="artek-stripe-invoice-paid">
+                {% if invoice.paid %}<i class="fas fa-check"></i>{% endif %}
+            </td>
+        </tr>
+    {% endfor %}
+    <tbody>
+</table>

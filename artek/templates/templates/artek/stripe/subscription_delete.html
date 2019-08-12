@@ -1,0 +1,27 @@
+{% extends "artek/stripe/base.html" %}
+
+
+{% load bootstrap i18n %}
+
+{% block body_class %}{{ block.super }} artek-stripe-subscriptions{% endblock %}
+
+{% block content %}
+<div class="artek-stripe-subscriptions-cancel-container">
+    <h4>{% trans 'Cancel Subscription' %}</h4>
+    {% if errors %}
+        <div class="errors">
+            {{ errors }}
+        </div>
+    {% endif %}
+
+    <div class="summary">
+        {% trans 'You began your subscription of' %} <strong>{{ object.plan.name }}</strong> {% trans 'on' %}
+        {{ object.start }}.
+    </div>
+
+    <form action="{% url "artek_stripe_subscription_delete" object.pk %}" method="post">
+        {% csrf_token %}
+        <button>{% trans 'Cancel' %}</button>
+    </form>
+</div>
+{% endblock %}

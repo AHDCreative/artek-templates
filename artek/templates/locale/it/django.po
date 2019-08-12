@@ -1,0 +1,296 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: POEditor.com\n"
+"Project-Id-Version: Artek Templates\n"
+"Language: it\n"
+
+#: templates/404.html:5
+msgid "Not Found"
+msgstr "Non trovato"
+
+#: templates/404.html:9
+msgid "Page not found"
+msgstr "pagina non trovata"
+
+#: templates/404.html:10
+msgid "We're sorry but that page could not be found."
+msgstr "Siamo spiacenti ma non è stato possibile trovare quella pagina."
+
+#: templates/500.html:5
+msgid "Server Error"
+msgstr "Errore del server"
+
+#: templates/500.html:9
+msgid "Something went wrong"
+msgstr "Qualcosa è andato storto"
+
+#: templates/500.html:10
+msgid "We're sorry but a server error has occurred. We've been notified and will look into it as soon as possible."
+msgstr "Siamo spiacenti ma si è verificato un errore del server. Siamo stati avvisati e lo esamineremo il prima possibile."
+
+#: templates/_account_bar.html:12 templates/account/base.html.py:9
+msgid "Settings"
+msgstr "impostazioni"
+
+#: templates/_account_bar.html:14
+msgid "Admin"
+msgstr "Admin"
+
+#: templates/_account_bar.html:18 templates/account/logout.html.py:5
+#: templates/account/logout.html:11 templates/account/logout.html.py:15
+msgid "Log out"
+msgstr "Log Out"
+
+#: templates/_account_bar.html:23 templates/account/login.html.py:7
+#: templates/account/login.html:19 templates/account/signup.html.py:23
+msgid "Log in"
+msgstr "Log In"
+
+#: templates/_account_bar.html:25 templates/account/login.html.py:25
+#: templates/account/signup.html:7 templates/account/signup.html.py:13
+#: templates/account/signup.html:19 templates/account/signup_closed.html:5
+msgid "Sign up"
+msgstr "Registrazione"
+
+#: templates/account/base.html:12 templates/account/settings.html.py:8
+#: templates/account/settings.html:14
+msgid "Account"
+msgstr "Account"
+
+#: templates/account/base.html:15 templates/account/password_change.html:8
+#: templates/account/password_change.html:14
+msgid "Change password"
+msgstr "Cambia la password"
+
+#: templates/account/base.html:18
+msgid "Delete account"
+msgstr "Eliminare l'account"
+
+#: templates/account/delete.html:7 templates/account/delete.html.py:10
+msgid "Delete Account"
+msgstr "Eliminare l'account"
+
+#: templates/account/delete.html:12
+msgid "If you go ahead and delete your account, your information will be <b>expunged within %(ACCOUNT_DELETION_EXPUNGE_HOURS)s hours</b>."
+msgstr "Se vai avanti ed elimini il tuo account, le tue informazioni verranno <b> cancellate entro% (ACCOUNT_DELETION_EXPUNGE_HOURS) s ore </b>."
+
+#: templates/account/delete.html:16
+msgid "Delete My Account"
+msgstr "Cancella il mio account"
+
+#: templates/account/email/email_confirmation_message.txt:1
+msgid "A user on %(site_name)s has created an account using this email address.\n"
+"\n"
+"To confirm this email address, go to %(activate_url)s\n"
+"\n"
+"If you did not sign up for this site, you can ignore this message.\n"
+""
+msgstr "Un utente su% (site_name) s ha creato un account utilizzando questo indirizzo email.\n"
+"\n"
+"Per confermare questo indirizzo email, vai a% (activ_url) s\n"
+"\n"
+"Se non ti sei registrato a questo sito, puoi ignorare questo messaggio.\n"
+""
+
+#: templates/account/email/email_confirmation_subject.txt:1
+msgid "Confirm email address for %(site_name)s"
+msgstr "Conferma l'indirizzo email per% (nome_sito) s"
+
+#: templates/account/email/invite_user.txt:1
+msgid "You have been invited to sign up at %(name)s.\n"
+"\n"
+"%(signup_url)s\n"
+""
+msgstr "Sei stato invitato a registrarti su% (nome) s.\n"
+"\n"
+"% (SIGNUP_URL) s\n"
+""
+
+#: templates/account/email/invite_user_subject.txt:1
+msgid "Create an account on %(name)s"
+msgstr "Crea un account su %(name)s"
+
+#: templates/account/email/password_change.txt:1
+msgid "This is the email notification to confirm your password has been changed on %(now)s."
+msgstr "Questa è la notifica via email per confermare che la tua password è stata cambiata in% (ora) s."
+
+#: templates/account/email/password_change_subject.txt:1
+msgid "Change password email notification"
+msgstr "Modifica notifica e-mail password"
+
+#: templates/account/email/password_reset.txt:1
+msgid "You're receiving this email because you or someone else has requested a password for your user account at %(site_name)s.\n"
+"It can be safely ignored if you did not request a password reset. Click the link below to reset your password.\n"
+"\n"
+"%(password_reset_url)s\n"
+""
+msgstr "Ricevi questa email perché tu o qualcun altro ha richiesto una password per il tuo account utente in% (nome_sito) s.\n"
+"Può essere tranquillamente ignorato se non è stata richiesta una reimpostazione della password. Fai clic sul link in basso per reimpostare la password.\n"
+"\n"
+"% (password_reset_url) s\n"
+""
+
+#: templates/account/email/password_reset_subject.txt:1
+msgid "[%(site_name)s] Password reset"
+msgstr "[% (nome_sito) s] Reimpostazione password"
+
+#: templates/account/email_confirm.html:5
+#: templates/account/email_confirm.html:11
+msgid "Confirm Email"
+msgstr "Conferma email"
+
+#: templates/account/email_confirm.html:14
+msgid "Confirm email address <b>%(email)s</b>?"
+msgstr "Conferma indirizzo email <b>% (email) s </b>?"
+
+#: templates/account/email_confirm.html:15
+msgid "Confirm"
+msgstr "Confermare"
+
+#: templates/account/email_confirmation_sent.html:5
+#: templates/account/email_confirmation_sent.html:8
+msgid "Confirm your email address"
+msgstr "Conferma il tuo indirizzo email"
+
+#: templates/account/email_confirmation_sent.html:10
+msgid "We have sent you an email to <b>%(email)s</b> for verification. Follow the link provided to finalize the signup process. If you do not receive it within a few minutes, contact us at <a href=\"mailto:%(THEME_CONTACT_EMAIL)s\">%(THEME_CONTACT_EMAIL)s</a>."
+msgstr "Ti abbiamo inviato un'email a <b>% (email) s </b> per la verifica. Segui il link fornito per finalizzare il processo di registrazione. Se non lo ricevi entro pochi minuti, contattaci all'indirizzo <a href=\"mailto:%(THEME_CONTACT_EMAIL)s\">% (THEME_CONTACT_EMAIL) s </a>."
+
+#: templates/account/email_confirmation_sent.html:11
+msgid "Go back"
+msgstr "Torna indietro"
+
+#: templates/account/email_confirmed.html:5
+#: templates/account/email_confirmed.html:8
+msgid "Email confirmed"
+msgstr "Email confermata"
+
+#: templates/account/email_confirmed.html:9
+msgid "You have confirmed <b>%(email)s</b>"
+msgstr "Hai confermato <b>% (email) s </b>"
+
+#: templates/account/login.html:13
+msgid "Log in to an existing account"
+msgstr "Connessione a un account esistente"
+
+#: templates/account/login.html:20
+msgid "Forgot your password?"
+msgstr "Hai dimenticato la password?"
+
+#: templates/account/login.html:25
+msgid "Don't have an account?"
+msgstr "Non hai un account?"
+
+#: templates/account/logout.html:14
+msgid "Are you sure you want to log out?"
+msgstr "Sei sicuro di voler uscire?"
+
+#: templates/account/password_change.html:18
+#: templates/account/password_reset_token.html:16
+#: templates/account/settings.html:17
+msgid "Save"
+msgstr "Salvare"
+
+#: templates/account/password_reset.html:7
+#: templates/account/password_reset.html:15
+msgid "Password reset"
+msgstr "Reimpostazione della password"
+
+#: templates/account/password_reset.html:16
+msgid "Forgotten your password? Enter your email address below, and we'll send you an email allowing you to reset it."
+msgstr "Hai dimenticato la tua password? Inserisci il tuo indirizzo e-mail di seguito e ti invieremo un'e-mail che ti consentirà di reimpostarlo."
+
+#: templates/account/password_reset.html:22
+msgid "Reset my password"
+msgstr "Reimposta la mia password"
+
+#: templates/account/password_reset.html:29
+msgid "If you have any trouble resetting your password, contact us at <a href=\"mailto:%(THEME_CONTACT_EMAIL)s\">%(THEME_CONTACT_EMAIL)s</a>."
+msgstr "In caso di problemi durante il ripristino della password, contattaci all'indirizzo <a href=\"mailto:%(THEME_CONTACT_EMAIL)s\">% (THEME_CONTACT_EMAIL) s </a>."
+
+#: templates/account/password_reset_sent.html:6
+#: templates/account/password_reset_sent.html:9
+msgid "Password reset sent"
+msgstr "Reimpostazione password inviata"
+
+#: templates/account/password_reset_sent.html:11
+msgid "We have sent you an email. If you do not receive it within a few minutes, try resending or contact us at <a href=\"mailto:%(THEME_CONTACT_EMAIL)s\">%(THEME_CONTACT_EMAIL)s</a>."
+msgstr "Ti abbiamo inviato una email. Se non lo ricevi entro pochi minuti, prova a inviare nuovamente o contattaci all'indirizzo <a href=\"mailto:%(THEME_CONTACT_EMAIL)s\">% (THEME_CONTACT_EMAIL) s </a>."
+
+#: templates/account/password_reset_sent.html:20
+msgid "Resend"
+msgstr "inviare di nuovo"
+
+#: templates/account/password_reset_sent.html:25
+msgid "We have resent the password email. If you do not receive it within a few minutes, contact us at <a href=\"mailto:%(THEME_CONTACT_EMAIL)s\">%(THEME_CONTACT_EMAIL)s</a>."
+msgstr "Abbiamo inviato nuovamente l'email di password. Se non lo ricevi entro pochi minuti, contattaci all'indirizzo <a href=\"mailto:%(THEME_CONTACT_EMAIL)s\">% (THEME_CONTACT_EMAIL) s </a>."
+
+#: templates/account/password_reset_token.html:6
+#: templates/account/password_reset_token.html:12
+msgid "Set your new password"
+msgstr "Imposta la tua nuova password"
+
+#: templates/account/password_reset_token_fail.html:5
+#: templates/account/password_reset_token_fail.html:8
+msgid "Bad token"
+msgstr "Token non valido"
+
+#: templates/account/password_reset_token_fail.html:10
+msgid "The password reset link was invalid, possibly because it has already been used.  Please request a <a href=\"%(url)s\">new password reset</a>."
+msgstr "Il link di reimpostazione della password non era valido, probabilmente perché è già stato utilizzato. Richiedi un <a href=\"%(url)s\"> reimpostazione nuova password </a>."
+
+#: templates/account/signup.html:23
+msgid "Already have an account?"
+msgstr "Hai già un account?"
+
+#: templates/account/signup_closed.html:8
+msgid "This site is in private beta"
+msgstr "Questo sito è in beta privata"
+
+#: templates/account/signup_closed.html:9
+msgid "If you have signup code you can enter it below."
+msgstr "Se disponi di un codice di registrazione, puoi inserirlo di seguito."
+
+#: templates/account/signup_closed.html:11
+msgid "Your signup code..."
+msgstr "Il tuo codice di registrazione ..."
+
+#: templates/pagination/builtin_pagination.html:9
+#: templates/pagination/builtin_pagination.html:12
+#: templates/pagination/django_pagination_pagination.html:8
+#: templates/pagination/django_pagination_pagination.html:11
+msgid "Previous"
+msgstr "Precedente"
+
+#: templates/pagination/builtin_pagination.html:18
+#: templates/pagination/builtin_pagination.html:20
+#: templates/pagination/django_pagination_pagination.html:21
+#: templates/pagination/django_pagination_pagination.html:23
+msgid "Next"
+msgstr "Il prossimo"
+
+#: templates/pagination/builtin_pagination_reverse.html:10
+#: templates/pagination/builtin_pagination_reverse.html:13
+msgid "Newer"
+msgstr "Più nuovo"
+
+#: templates/pagination/builtin_pagination_reverse.html:19
+#: templates/pagination/builtin_pagination_reverse.html:21
+msgid "Older"
+msgstr "Più vecchio"
+
+#: templates/pinax/invitations/_invite_form.html:15
+msgid "Invite"
+msgstr "Invitare"
+
+#: templates/pinax/invitations/_invite_form.html:21
+msgid "You do not have any invitations currrently."
+msgstr "Non hai alcun invito in corso."
+
+#: templates/pinax/invitations/_invited.html:17
+msgid "You have not sent any invitations yet."
+msgstr "Non hai ancora inviato alcun invito."
+

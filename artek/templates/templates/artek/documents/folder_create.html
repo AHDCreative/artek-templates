@@ -1,0 +1,23 @@
+{% extends "artek/documents/base.html" %}
+
+{% block body_class %}{{ block.super }} artek-documents-folder-create{% endblock %}
+
+{% load bootstrap %}
+
+{% block head_title %}Create folder{% if parent %} in {{ parent.name }}{% endif %}{% endblock %}
+
+{% block body %}
+<div class="artek-documents-folder-create-container">
+    <h2>Create folder{% if parent %} in {{ parent.name }}{% endif %}</h2>
+
+    {% include "artek/documents/_breadcrumbs.html" with member=parent %}
+
+    <form method="POST" action="{% url 'artek_documents:folder_create' %}">
+        {% csrf_token %}
+        {{ form|bootstrap }}
+        <div class="form-actions">
+            <button>Create</button>
+        </div>
+    </form>
+</div>
+{% endblock %}

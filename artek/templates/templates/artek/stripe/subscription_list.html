@@ -1,0 +1,45 @@
+{% extends "artek/stripe/base.html" %}
+{% load i18n %}
+
+{% block body_class %}{{ block.super }} artek-stripe-subscriptions{% endblock %}
+
+{% block content %}
+<div class="artek-stripe-subscriptions-container">
+    <h4 class="with-actions">
+        {% trans 'Current Subscriptions' %}
+        <a class="button" href="{% url "artek_stripe_subscription_create" %}">
+            <i class="fas fa-plus"></i>
+            {% trans 'Add Subscription' %}
+        </a>
+    </h4>
+    </div>
+    <table>
+        <thead>
+            {% blocktrans %}<tr><th></th><th>Current Period</th><th>Plan</th><th>Since</th><th>Status</th></tr>{% endblocktrans %}
+        </thead>
+        <tbody>
+            {% for subscription in object_list %}
+            <tr>
+                <td>
+                    <a class="subscription-cancel" href="{% url "artek_stripe_subscription_delete" subscription.pk %}">Cancel</a>
+                    <a class="subscription-update" href="{% url "artek_stripe_subscription_update" subscription.pk %}">Update</a>
+                </td>
+                <td>
+                    {{ subscription.current_period_start.date }}—{{subscription.current_period_end.date }}
+                </td>
+                <td>
+                    {{ subscription.plan.name }}
+                </td>
+                <td>
+                    {{ subscription.start }}
+                </td>
+                <td>
+                    {{ subscription.status|title }}
+                </td>
+            </tr>
+            {% empty %}
+            {% blocktrans %}<tr><td colspan="5">You have no subscriptions.</td></tr>{% endblocktrans %}
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}
